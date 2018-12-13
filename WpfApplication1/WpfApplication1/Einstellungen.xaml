@@ -127,7 +127,7 @@
                             Email Schreiben
                         </Hyperlink>
                     </TextBlock>
-                    <TextBlock x:Name="textBlock4" ToolTip="Emailprogramm öffnet sich" HorizontalAlignment="Left" Height="20" Margin="229,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42">
+                    <TextBlock x:Name="textBlock4" ToolTip="Github-repository öffnet sich im Standartbrowser" HorizontalAlignment="Left" Height="20" Margin="229,262,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="42">
                         <Hyperlink NavigateUri="https://github.com/OscarKirchner/ZeitRechner" RequestNavigate="Hyperlink_RequestNavigate">
                             GitHub
                         </Hyperlink>
