@@ -1,0 +1,49 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1" Closing="Window_Closing_1"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d" Icon="./Resources/Icon/icons8-timezone-+2-40.png"
+        Title="ZeitRechner" Height="503.091" Width="890.102" KeyDown="Window_KeyDown" ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="77*"/>
+            <ColumnDefinition Width="365*"/>
+        </Grid.ColumnDefinitions>
+
+        <Canvas x:Name="canvas" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.ColumnSpan="2"/>
+        <Button x:Name="button1" ToolTip="ESC" Content="Schließen" HorizontalAlignment="Left" Margin="574,41,0,0" VerticalAlignment="Top" Width="99" Click="button1_Click" Height="352" Grid.Column="1"/>
+        <Border BorderBrush="Black" BorderThickness="1" x:Name="Boarder2" HorizontalAlignment="Left" Height="352" Margin="26,41,0,0" VerticalAlignment="Top" Width="664" Grid.ColumnSpan="2">
+            <Border BorderBrush="Black" x:Name="Boarder1" BorderThickness="1" HorizontalAlignment="Left" Height="293" Margin="375,32,0,0" VerticalAlignment="Top" Width="270"/>
+        </Border>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="60,83,0,0" TextWrapping="Wrap" Text="0,00" VerticalAlignment="Top" Width="69" PreviewTextInput="NumberValidationTextBox" />
+        <Label x:Name="label2" Content="Ergebnis:" HorizontalAlignment="Left" Margin="252,83,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+        <TextBox x:Name="textBox2" MaxLength="2"  HorizontalAlignment="Left" Height="23" Margin="60,147,0,0" TextWrapping="Wrap" Text="08" VerticalAlignment="Top" Width="23" RenderTransformOrigin="-0.277,0.502"/>
+        <Label x:Name="label3" ToolTip="zB. 08 : 30 oder 07 : 48" Content="Beginn heute" HorizontalAlignment="Left" Margin="40,120,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox3" MaxLength="2" HorizontalAlignment="Left" Height="23" Margin="106,147,0,0" TextWrapping="Wrap" Text="00" VerticalAlignment="Top" Width="23"/>
+        <Label x:Name="label4" Content=":" HorizontalAlignment="Left" Margin="88,143,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label5" ToolTip="= Faktor, wie im inesCRM unter Tagespräsenzzeiten -> GL-Saldo std. angegeben" Content="Zeitguthaben wie angegeben (zb. 1,93 oder -0,83)" HorizontalAlignment="Left" Margin="40,56,0,0" VerticalAlignment="Top" Width="286" Grid.ColumnSpan="2"/>
+        <Label x:Name="label6" ToolTip="zB. 30 oder 50" Content="Pause heute in Minuten" HorizontalAlignment="Left" Margin="40,179,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="23" Margin="60,206,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="69"/>
+        <Label x:Name="label7" Content="Durch kleine Rundungsfehler kann es zu Verschiebungen kommen, weswegen manchmal eine Minute auf das Ergebnis aufgeschlagen wird." FontSize="8"  HorizontalAlignment="Left" Margin="64,411,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label x:Name="label99" Content="Es kann zu minimalen Ungenauigkeiten von max. +1 Minute kommen. Genaueres unter Info*. Alle Angaben ohne Gewähr." FontSize="8"  HorizontalAlignment="Left" Margin="64,424,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label x:Name="label8" Content="Zeitrechner, um geringe Überstunden( bis max. 4h) oder geringe Minusstunden( bis max. -4h) zu checken:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label x:Name="label9" ToolTip="zB. 16 : 45" Content="Wann magst du heute gehen?" HorizontalAlignment="Left" Margin="40,264,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBox5" MaxLength="2" HorizontalAlignment="Left" Height="23" Margin="60,291,0,0" TextWrapping="Wrap" Text="17" VerticalAlignment="Top" Width="23"/>
+        <TextBox x:Name="textBox6" MaxLength="2" HorizontalAlignment="Left" Height="23" Margin="106,291,0,0" TextWrapping="Wrap" Text="00" VerticalAlignment="Top" Width="23"/>
+        <TextBox x:Name="textBox5_Copy1" HorizontalAlignment="Left" Height="23" Margin="60,350,0,0" TextWrapping="Wrap" Text="2,5" VerticalAlignment="Top" Width="69" PreviewTextInput="NumberValidationTextBox"/>
+        <Button x:Name="button2" ToolTip="Enter" HorizontalAlignment="Left" Margin="172,78,0,0" VerticalAlignment="Top" Width="65" Click="button2_Click" Height="284" Grid.Column="1">
+            <TextBlock>Auswerten<LineBreak/>( Enter ↩ )</TextBlock>
+        </Button>
+
+        <Label x:Name="label10" Content=":" HorizontalAlignment="Left" Margin="88,287,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label11" Content="-----------------------------------------" HorizontalAlignment="Left" Margin="40,234,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Button x:Name="button" ToolTip="I" Content="⚙" FontSize="20" HorizontalAlignment="Left" Margin="26,411,0,0" VerticalAlignment="Top" Width="38" Height="40" Click="button_Click" RenderTransformOrigin="0.3,2.909"/>
+        <Label x:Name="label9_Copy" ToolTip="= WuschZeitguthaben, zB. 0 oder 2,75" Content="Was ist dein Wunschfaktor?" HorizontalAlignment="Left" Margin="40,323,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label x:Name="label9_Copy1" Content="Uhr" HorizontalAlignment="Left" Margin="134,143,0,0" VerticalAlignment="Top" Width="41" Grid.ColumnSpan="2"/>
+        <Label x:Name="label9_Copy2" Content="Uhr" HorizontalAlignment="Left" Margin="134,287,0,0" VerticalAlignment="Top" Width="41" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>

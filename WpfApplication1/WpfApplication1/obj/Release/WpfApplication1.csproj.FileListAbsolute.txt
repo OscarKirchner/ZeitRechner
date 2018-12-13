@@ -1,0 +1,17 @@
+D:\Work\C#\Test\XamarinTest\WpfApplication1\WpfApplication1\bin\Release\WpfApplication1.exe.config
+D:\Work\C#\Test\XamarinTest\WpfApplication1\WpfApplication1\bin\Release\WpfApplication1.exe
+D:\Work\C#\Test\XamarinTest\WpfApplication1\WpfApplication1\bin\Release\WpfApplication1.pdb
+D:\Work\C#\Test\XamarinTest\WpfApplication1\WpfApplication1\obj\Release\Einstellungen.g.cs
+D:\Work\C#\Test\XamarinTest\WpfApplication1\WpfApplication1\obj\Release\MainWindow.g.cs
+D:\Work\C#\Test\XamarinTest\WpfApplication1\WpfApplication1\obj\Release\App.g.cs
+D:\Work\C#\Test\XamarinTest\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1_MarkupCompile.cache
+D:\Work\C#\Test\XamarinTest\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1_MarkupCompile.lref
+D:\Work\C#\Test\XamarinTest\WpfApplication1\WpfApplication1\obj\Release\Einstellungen.baml
+D:\Work\C#\Test\XamarinTest\WpfApplication1\WpfApplication1\obj\Release\MainWindow.baml
+D:\Work\C#\Test\XamarinTest\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1.g.resources
+D:\Work\C#\Test\XamarinTest\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1.Properties.Resources.resources
+D:\Work\C#\Test\XamarinTest\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1.csproj.GenerateResource.cache
+D:\Work\C#\Test\XamarinTest\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1.csproj.CoreCompileInputs.cache
+D:\Work\C#\Test\XamarinTest\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1.exe
+D:\Work\C#\Test\XamarinTest\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1.pdb
+D:\Work\C#\Test\XamarinTest\WpfApplication1\WpfApplication1\obj\Release\WpfApplication1.csprojAssemblyReference.cache
