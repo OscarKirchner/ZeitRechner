@@ -168,7 +168,7 @@ namespace WpfApplication1
                 "\n- Wenn ihr den Wintermodus aktiviert habt, wird die Hintergrundfarbe immer automatisch auf Rot gesetzt." +
                 "\n- Mit der ESC-Taste lässt sich das Programm schließen. Diese Infobox lässt sich mit der I-Taste öffnen." +
                 "\n- Ihr könnt bis Faktor +/- 6,00 Rechnen, denkt aber bitte daran, dass eigentlich max. +/- 4 Stunden an einem Tag ausgeglichen werden können." +
-                "\n- Ihr könnt eure eigenen Defaultwerte in den Einstellungen festlegen, diese werden unter 'C:\\temp\\ZeitRechnerDefaultEinstellungen.Xml' gespeichert." +
+                "\n- Ihr könnt eure eigenen Defaultwerte in den Einstellungen festlegen, diese werden unter '%appdata%' gespeichert." +
                 "\n- Denk daran, dass in der ines-Zeiterfassung abgerundet wird. Wird dir also als neuer Faktor '1,48666..' angezeigt wird, hast du nachher '1,48' auf deinem konto, nicht '1,49'." +
                 "\n- Es kann zu sog. weichen Fehlern kommen, zB. wenn die angegebene Pausenzeit nicht mindestens 30 Minuten beträgt. Diese werden durch eine Meldung mit dem Titel 'Achtung' gekennzeichnet, der Zeitrechner rechnet aber trotzdem. Bitte beachte, dass es in so einem Fall zu Fehlern kommen kann." +
                 "\n\n*- Die minimalen Ungenauigkeiten sind immer zu eurem 'Besten'. Es kann also sein, dass ihr eine Minute länger bleibt als nötig, damit die angegebene Zielzeit sicher erreicht wird. Es ist jedoch niemals so, dass euch die App in den Feierabend schickt, ihr aber den gewünschten Faktor verfehlt. Allerdings bleibt auch das ohne Gewähr." +                
